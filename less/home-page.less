@@ -74,7 +74,11 @@
       }
 
       .btn {
-        .btn-custom(120px, 40px)
+        .btn-custom(120px, 40px);
+        @media @mobile {
+          width: 100%;
+          padding: 15px;
+        }
       }
 
       @media @mobile {
