@@ -1,3 +1,29 @@
 .signup {
-    
+  height: 300px;
+  .flex-custom(column, center, center);
+
+  form {
+      width: 500px;
+      height: 150px;
+    .flex-custom(column, space-between, center);
+
+    .signup-field,
+    .password-field {
+      .flex-custom(row, space-between, center);
+      width: 300px;
+      @media @mobile {
+        .flex-custom(column, space-between, center);
+      }
+      
+      label {
+          font-size: 1.6rem;
+      }
+    }// .signup-field, passowrd-field
+
+    .submit-field {
+        input{
+            .btn-custom(120px, 40px);
+        }
+    }
+  }// form
 }
