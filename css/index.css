@@ -286,13 +286,13 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
-    padding: 15px;
+    padding: 0 15px;
   }
 }
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
-    padding: 15px;
+    padding: 0 15px;
   }
 }
 .home .walk .walk-img {
@@ -302,7 +302,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
-    padding: 15px;
+    padding: 0 15px;
     margin: 0 auto;
   }
 }
