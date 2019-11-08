@@ -273,6 +273,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .walk .walk-text .btn:hover {
+  background: #81848e;
+  color: #23293b;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;

@@ -1,19 +1,33 @@
 // Mixins Here
+.mobile-padding-wdth() {
+  width: 100%;
+  padding: 15px;
+}
 
+.center(){
+    margin: 0 auto;
+}
+
+// Paramatric mixins
 .flex-custom(@dir, @just, @align) {
-    display: flex;
-    flex-direction: @dir;
-    justify-content: @just;
-    align-items: @align;
+  display: flex;
+  flex-direction: @dir;
+  justify-content: @just;
+  align-items: @align;
 }
 
-.btn-custom(@width, @height){
-    border-radius: 5px;
-    background-color: @btn-bg-color;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    width: @width ;
-    height: @height;
-    .flex-custom(row, center, center)
-}
+.btn-custom(@width, @height) {
+  border-radius: 5px;
+  background-color: @btn-bg-color;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  width: @width;
+  height: @height;
+  .flex-custom(row, center, center);
+
+  &:hover {
+    background: @waterloo;
+    color: @ebony-clay;
+  }
+}// .btn-custom
