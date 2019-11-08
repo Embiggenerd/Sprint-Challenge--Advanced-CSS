@@ -276,6 +276,12 @@ footer {
 .home .walk .walk-text .btn:hover {
   background: #81848e;
   color: #23293b;
+  animation: point 0.5s forwards infinite ease-in normal;
+}
+@keyframes point {
+  50% {
+    transform: translateY(-10px);
+  }
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {

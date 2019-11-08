@@ -1,11 +1,20 @@
 // Mixins Here
-.mobile-padding-wdth() {
+.mobile-padding-width() {
   width: 100%;
   padding: 15px;
 }
 
-.center(){
-    margin: 0 auto;
+.center() {
+  margin: 0 auto;
+}
+
+.point() {
+  @keyframes point {
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  animation: point 0.5s forwards infinite ease-in normal;
 }
 
 // Paramatric mixins
@@ -29,5 +38,7 @@
   &:hover {
     background: @waterloo;
     color: @ebony-clay;
+    .point()
   }
-}// .btn-custom
+} // .btn-custom
+
