@@ -1,1 +1,26 @@
 // Navigation code here
+nav {
+  .flex-custom(column, space-around, center);
+  height: 100px;
+  background-color: @nav-bg;
+  border: 1px solid @nav-border;
+
+  .nav-links {
+    width: 500px;
+    .flex-custom(row, space-around, center);
+
+    a {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: black;
+    }
+
+    @media @mobile {
+      width: 100%;
+    }
+  }// nav-links
+
+  h1 {
+    font-size: 4rem;
+  }
+} // nav
